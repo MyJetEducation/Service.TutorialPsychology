@@ -7,7 +7,7 @@ namespace Service.TutorialPsychology.Grpc.Models.State
 	public class GetFinishStateGrpcRequest
 	{
 		[DataMember(Order = 1)]
-		public Guid? UserId { get; set; }
+		public string UserId { get; set; }
 
 		[DataMember(Order = 2)]
 		public int? Unit { get; set; }
