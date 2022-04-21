@@ -1,8 +1,7 @@
 ﻿using System.ServiceModel;
 using System.Threading.Tasks;
-using Service.TutorialPsychology.Grpc.Models.State;
-using Service.TutorialPsychology.Grpc.Models.Task;
-
+using Service.Education.Contracts.State;
+using Service.Education.Contracts.Task;
 namespace Service.TutorialPsychology.Grpc
 {
 	[ServiceContract]

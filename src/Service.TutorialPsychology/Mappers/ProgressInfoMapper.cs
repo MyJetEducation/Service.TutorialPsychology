@@ -1,5 +1,5 @@
 ﻿using Service.Core.Client.Constants;
-using Service.TutorialPsychology.Grpc.Models.State;
+using Service.Education.Contracts.State;
 using Service.TutorialPsychology.Models;
 
 namespace Service.TutorialPsychology.Mappers

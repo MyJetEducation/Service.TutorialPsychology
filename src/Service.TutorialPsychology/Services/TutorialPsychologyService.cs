@@ -1,7 +1,6 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using Service.Education.Contracts.State;
 using Service.TutorialPsychology.Grpc;
-using Service.TutorialPsychology.Grpc.Models.State;
 using Service.TutorialPsychology.Mappers;
 using Service.TutorialPsychology.Models;
 using Service.UserReward.Grpc;

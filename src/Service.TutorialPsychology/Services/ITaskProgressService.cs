@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Service.Education.Contracts.State;
+using Service.Education.Contracts.Task;
 using Service.Education.Structure;
-using Service.TutorialPsychology.Grpc.Models.State;
-using Service.TutorialPsychology.Grpc.Models.Task;
 using Service.TutorialPsychology.Models;
 
 namespace Service.TutorialPsychology.Services
