@@ -18,11 +18,11 @@ namespace Service.TutorialPsychology.Services
 		{
 			ITaskTestAnswer[] answers = request.Answers;
 
-			int progress = CheckAnswer(20, answers, 1, 2)
+			int progress = CheckAnswer(20, answers, 1, 1)
 				+ CheckAnswer(20, answers, 2, 2)
 				+ CheckAnswer(20, answers, 3, 2)
 				+ CheckAnswer(20, answers, 4, 2)
-				+ CheckAnswer(20, answers, 5, 2);
+				+ CheckAnswer(20, answers, 5, 3);
 
 			return await _taskProgressService.SetTaskProgressAsync(request.UserId, Unit3, Unit3.Tasks[2], request.IsRetry, request.Duration, progress);
 		}

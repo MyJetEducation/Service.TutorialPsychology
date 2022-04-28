@@ -18,11 +18,11 @@ namespace Service.TutorialPsychology.Services
 		{
 			ITaskTestAnswer[] answers = request.Answers;
 
-			int progress = CheckAnswer(20, answers, 1, 2)
-				+ CheckAnswer(20, answers, 2, 2, 3)
+			int progress = CheckAnswer(20, answers, 1, 2, 3)
+				+ CheckAnswer(20, answers, 2, 1)
 				+ CheckAnswer(20, answers, 3, 1)
 				+ CheckAnswer(20, answers, 4, 2)
-				+ CheckAnswer(20, answers, 5, 1, 2);
+				+ CheckAnswer(20, answers, 5, 2);
 
 			return await _taskProgressService.SetTaskProgressAsync(request.UserId, Unit2, Unit2.Tasks[2], request.IsRetry, request.Duration, progress);
 		}
@@ -37,10 +37,10 @@ namespace Service.TutorialPsychology.Services
 		{
 			ITaskTrueFalseAnswer[] answers = request.Answers;
 
-			int progress = CheckAnswer(20, answers, 1, false)
-				+ CheckAnswer(20, answers, 2, false)
+			int progress = CheckAnswer(20, answers, 1, true)
+				+ CheckAnswer(20, answers, 2, true)
 				+ CheckAnswer(20, answers, 3, true)
-				+ CheckAnswer(20, answers, 4, false)
+				+ CheckAnswer(20, answers, 4, true)
 				+ CheckAnswer(20, answers, 5, false);
 
 			return await _taskProgressService.SetTaskProgressAsync(request.UserId, Unit2, Unit2.Tasks[5], request.IsRetry, request.Duration, progress);
